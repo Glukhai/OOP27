@@ -1,9 +1,9 @@
 package lesson2;
 import java.io.*;
 public class Task2 {
-// считывание файла до конца
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	public static void main(String[] args) throws IOException {
-		FileReader reader = new FileReader("text");
+		FileReader reader = new FileReader("d:// text.txt");
 		
 //		//reader.read(arg0, arg1, arg2)
 //		while (true){
@@ -15,7 +15,7 @@ public class Task2 {
 			
 				
 		//	int ch1;
-		//	while ((ch1 = reader.read()) !=-1){System.out.print((char)ch1); //скобки должны быть из за присвоения;
+		//	while ((ch1 = reader.read()) !=-1){System.out.print((char)ch1); //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ;
 			
 	//		int ch2;
 	//		String res ="";
@@ -24,7 +24,7 @@ public class Task2 {
 		//		 res +=  (char) ch2;
 			//	 System.out.println(res);
 			//	 System.out.print(res.length());
-				 //скобки должны быть из за присвоения;
+				 //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ;
 //		}
 //	int	ch3 = 0;
 //	while (ch3 = reader.read()) !=-1)
@@ -36,10 +36,10 @@ public class Task2 {
 			StringBuilder builder = new StringBuilder();
 			
 			while ((count = reader.read(buff)) !=-1){
-			String part = new String(buff, 0,count); // преобр 
+			String part = new String(buff, 0,count); // пїЅпїЅпїЅпїЅпїЅпїЅ 
 			builder.append(part);
 			String result = builder.toString();
-			builder.
+			//builder.
 			//System.out.print(count);
 			System.out.print(buff);
 			

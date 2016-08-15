@@ -28,8 +28,8 @@ public class Task2_Selection {
 	}
 		 
 public static void	swap1(int arr[], int i, int j) {
-		int tmp = arr[i]
-		 [j] =arr[minIndx];
+		int tmp = arr[i];
+		 j = arr[i];
 		arr[j] = tmp;
 		
 	}
