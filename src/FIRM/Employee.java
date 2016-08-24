@@ -1,7 +1,11 @@
 package FIRM;
 
+import java.util.Comparator;
+
 public class Employee {
-     enum Gender{male,female }; // уточнить Enum;
+   public static final Comparator <Employee> BY_SaLARY = (p1,p2) -> Float.compare(p1.salary,p2.salary);
+
+//    enum Gender{male,female }; // уточнить Enum;
     private String name;
     private String surname;
     private String midleName;
@@ -9,7 +13,8 @@ public class Employee {
     private int count;
     private String gender;
     private int salary;
-    public String getDepartment() {
+
+   public String getDepartment() {
         return department;
     }
 
@@ -39,7 +44,7 @@ public class Employee {
         this.midleName = midleName;
         this.department = department;
         this.count = count;
-      //  this.Gender = Gender;
+        this.gender = gender;
         this.salary = salary;
     }
 
@@ -70,5 +75,21 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString () {
+        return "\nEmployee {" + "\n" +
+                "surname = '"+ surname + '\'' +
+                "name = '" + name + '\'' +
+                "salary '" + midleName + '\'' +
+                "gender '" + gender + '\'' +
+                "count '" + count + '\'' +
+                "salary '" + salary + '\'' +
+                "department '" + department + '\'' + '}';
+
+
+
+    }
+
 }
 
