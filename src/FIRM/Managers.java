@@ -17,3 +17,5 @@ public class Managers extends Employee {
     }
 
 }
+
+///добавить ссылку на обьект на департамента!!!
