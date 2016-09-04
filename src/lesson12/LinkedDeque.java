@@ -5,27 +5,39 @@ package lesson12;
  */
 public class LinkedDeque implements Deque {
 
-   private Node first;
-    private Node prev;
+    private Node first;
+    private Node last;
     private int size;
+
+    public LinkedDeque(int element)
+    {
+        this.first = null;
+
+    }
 
 
     @Override
     public boolean pushFirst(int elem) {
         if (size == 0) {
             Node n = new Node(elem);
-            Node temp = n.next;
-            return false;
+            first  = last = new Node(elem);
+            size++;
 
-
+            return true;
         } else {
+            Node nd = new Node(elem);
+            nd.prev = first;
+            first.next =nd;
+            first = nd;
 
             return false;
         }
     }
     @Override
     public boolean pushLast(int elem) {
-
+        Node n = new Node(elem);
+        Node temp = n.next;
+        size++;
 
         return false;
     }
